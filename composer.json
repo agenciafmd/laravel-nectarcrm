@@ -1,0 +1,32 @@
+{
+    "name": "agenciafmd/laravel-nectarcrm",
+    "description": "Integração com o Nectar CRM",
+    "homepage": "https://github.com/agenciafmd/laravel-nectarcrm",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "João Paulo",
+            "email": "joao.paulo@fmd.ag",
+            "homepage": "https://fmd.ag/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Agenciafmd\\Nectarcrm\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Agenciafmd\\Nectarcrm\\Providers\\NectarcrmServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
